@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos Array - To Do List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+<body>
+    <main class="container">
+        <h1>To do List</h1>
+        <section class="todo-list">
+            <input id="txtTask" type="text" >
+            <button id="addTask">Agregar</button>
+        </section>
+        <section class="task-result">
+            <article class="task-result-info">
+                <p id="info-result-total">
+                    Total : <span id="total-value"></span>
+                </p>
+                <p id="info-result-filled">
+                    Realizadas : <span id="total-filled"></span>
+                </p>
+            </article>
+            <article class="task-result-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Tarea</td>
+                            <td colspan="3"></td>
+                        </tr> 
+                    </thead>
+                    <tbody id="result-list"></tbody>
+
+                </table>
+            </article>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
