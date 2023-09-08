@@ -23,15 +23,22 @@ const totalValue = document.querySelector("#total-value");
 const totalFilled = document.querySelector("#total-filled");
 
 btnAdd.addEventListener("click", () => {
+  let id = 1;
+
   if (taskInput.value.trim() === "") return;
 
   const newId = taskList.slice(-1);
 
+  if (newId.length!==0){
+    id = newId[0].id + 1
+  }
+
   const newTask = {
-    id: newId[0].id + 1,
+    id: id,
     task: taskInput.value,
     completed: false,
   };
+
   taskList.push(newTask);
   taskInput.value = "";
 
